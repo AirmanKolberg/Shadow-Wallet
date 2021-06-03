@@ -1,6 +1,10 @@
 # A list of all of the current supported coins
+# Feel free to add more as you please!
 supported_coins = ['ETH', 'XRP', 'BTC', 'XTZ',
-                   'ADA', 'DOGE']
+                   'ADA', 'DOGE', 'LTC', 'DASH',
+                   'BCH', 'KMD', 'NMC', 'ZEC',
+                   'DOT', 'XLM', 'BNB', 'XMR',
+                   'USDT']
 
 
 # Use this for any user input that must be a number
