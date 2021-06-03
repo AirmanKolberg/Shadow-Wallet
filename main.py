@@ -1,5 +1,4 @@
 from data_retrieval import *
-from os import path
 from matplotlib import pyplot as plt
 from dataframe_maker import new_user_csv_questions, create_new_csv
 
