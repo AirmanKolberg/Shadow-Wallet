@@ -26,8 +26,11 @@ def add_new_coin(new_coin, num_of_coins=False):
     if not new_coin:
         new_coin = input('Select coin: ').upper()
         if new_coin not in supported_coins:
-            print(f"{new_coin} is not (yet) supported, please try again.")
-            new_coin, num_of_coins = add_new_coin(new_coin=False)
+
+            # Ensure they are aware the coin isn't supported
+            verified = verify_yes_or_no(f"{new_coin} is not (yet) supported, add anyway?\n")
+            if not verified:
+                new_coin, num_of_coins = add_new_coin(new_coin=False)
 
     # Skips if this value was retrieved during recursion 2 lines up ^^
     if not num_of_coins:
