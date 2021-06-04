@@ -41,7 +41,7 @@ def check_price_all_coins():
 
     except KeyboardInterrupt:
         print('Keyboard interruption...')
-        sleep(0.75)
+        sleep(0.5)
 
 
 if __name__ == '__main__':
