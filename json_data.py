@@ -1,5 +1,4 @@
 import json
-from pprint import pprint
 
 
 def json_to_dictionary(json_file):
